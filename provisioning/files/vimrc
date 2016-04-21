@@ -1,0 +1,34 @@
+source $VIMRUNTIME/vimrc_example.vim
+
+set autoindent
+set autowrite
+set colorcolumn=80
+set expandtab
+set foldmethod=marker
+set hlsearch
+set matchpairs+=<:>
+set mouse-=a
+set nobackup
+set number
+set shiftround
+set shiftwidth=4
+set showmatch
+set smartcase
+set smartindent
+set smarttab
+set softtabstop=4
+set tabstop=4
+
+match ErrorMsg /\t/
+
+nmap j gj
+nmap k gk
+
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+call vundle#end()
+filetype plugin indent on
